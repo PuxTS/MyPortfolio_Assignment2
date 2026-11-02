@@ -1,0 +1,70 @@
+.projects-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.projects-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+/* 1. Standardizes cards in a grid and forces equal height */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  align-items: stretch; /* Forces equal height cards */
+}
+
+/* 2. Styles each project card */
+.project-card {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Allows content below to stretch */
+  text-align: center;
+  box-sizing: border-box;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.project-card:hover {
+  border-color: #646cff;
+  transform: translateY(-2px);
+}
+
+/* 3. Forces all images to share exact 1:1 dimensions without distortion */
+.project-image {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Forces square dimensions for every image */
+  object-fit: cover; /* Crops the zoom to fit without stretching */
+  border-radius: 6px;
+  margin-bottom: 15px;
+  background-color: #111; /* Fallback padding for any loading elements */
+}
+
+/* 4. Text and description alignment */
+.project-card h3 {
+  margin: 0 0 12px 0;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 6px 0;
+  color: #ccc;
+}
+
+.project-card strong {
+  color: #646cff;
+}
+
+/* Push outcome to align at the bottom if content is shorter */
+.project-card p:last-of-type {
+  margin-top: auto;
+}

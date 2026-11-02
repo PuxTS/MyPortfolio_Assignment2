@@ -1,0 +1,53 @@
+.education-container {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #444;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.program-name {
+  margin: 0 0 4px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.school-name {
+  margin: 0;
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+.education-date {
+  font-weight: bold;
+  color: #646cff;
+  white-space: nowrap;
+}
+
+.coursework-title {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.coursework-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+  margin-top: 1rem;
+}
+
+.course-card {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  text-align: center;
+}
